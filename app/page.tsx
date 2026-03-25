@@ -1,12 +1,14 @@
 import Navbar from "../components/Navbar";
+import FloatingPetals from "../components/FloatingPetals";
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-pink-100 text-gray-800">
+    <main className="min-h-screen bg-pink-100 text-gray-800 relative overflow-hidden">
       <Navbar />
+      <FloatingPetals />
 
       {/* Hero Section */}
-      <section className="flex flex-col items-center justify-center h-[80vh] text-center px-6">
+      <section className="flex flex-col items-center justify-center h-[80vh] text-center px-6 relative z-10">
         <h1 className="text-5xl font-bold mb-4">
           Hi, I'm Aanya 🌸
         </h1>
