@@ -5,23 +5,21 @@ export default function Home() {
   return (
     <main className="min-h-screen bg-pink-100 text-gray-800 relative overflow-hidden">
       <Navbar />
+      <img
+        src="/branch.png"
+        alt="cherry blossom branch"
+        className="absolute top-16 md:top-24 right-0 w-[350px] md:w-[450px] opacity-80 pointer-events-none -z-0"
+      />
       <FloatingPetals />
 
       {/* Hero Section */}
-      <section className="flex flex-col items-center justify-center h-[80vh] text-center px-6 relative z-10">
-        <h1 className="text-5xl font-bold mb-4">
+      <section className="flex flex-col justify-center h-[80vh] px-10 md:px-20 relative z-10">
+        <h1 className="text-5xl font-bold mb-4 text-left">
           Hi, I'm Aanya 🌸
         </h1>
-        <p className="text-lg text-gray-600 max-w-xl">
+        <p className="text-lg text-gray-600 max-w-xl text-left">
           CS student at UCI passionate about AI, cybersecurity, and building impactful tech.
         </p>
-
-        <a
-          href="#projects"
-          className="mt-6 bg-pink-300 px-6 py-2 rounded-xl font-semibold hover:bg-pink-400 transition"
-        >
-          View Projects
-        </a>
       </section>
 
       {/* Projects Section */}
