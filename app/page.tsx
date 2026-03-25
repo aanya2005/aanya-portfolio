@@ -93,34 +93,67 @@ export default function Home() {
       </section>
 
       {/* Contact Section */}
-      <section id="contact" className="px-10 py-20 text-center">
-        <h2 className="text-3xl font-bold mb-6">Contact 💌</h2>
+      <section id="contact" className="px-10 py-20 flex justify-center">
+        <div className="bg-white p-10 rounded-2xl shadow-md w-full max-w-xl">
+          
+          <h2 className="text-3xl font-bold mb-4 text-center">
+            Get in Touch 💌
+          </h2>
 
-        <p className="text-gray-600 mb-4">
-          Feel free to reach out or connect with me!
-        </p>
+          <p className="text-gray-600 text-center mb-6">
+            Have a question or want to work together? Fill out the form and I’ll get back to you soon!
+          </p>
 
-        <div className="flex justify-center gap-6">
-          <a
-            href="https://linkedin.com"
-            className="bg-white px-4 py-2 rounded-xl shadow hover:bg-gray-100"
-          >
-            LinkedIn
-          </a>
+          <form className="flex flex-col gap-4">
+            
+            {/* Name */}
+            <div>
+              <label className="text-sm font-medium">Name</label>
+              <input
+                type="text"
+                placeholder="Enter your name"
+                className="w-full mt-1 p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-pink-300"
+              />
+            </div>
 
-          <a
-            href="https://github.com"
-            className="bg-white px-4 py-2 rounded-xl shadow hover:bg-gray-100"
-          >
-            GitHub
-          </a>
+            {/* Email */}
+            <div>
+              <label className="text-sm font-medium">Email</label>
+              <input
+                type="email"
+                placeholder="Enter your email"
+                className="w-full mt-1 p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-pink-300"
+              />
+            </div>
 
-          <a
-            href="mailto:your@email.com"
-            className="bg-white px-4 py-2 rounded-xl shadow hover:bg-gray-100"
-          >
-            Email
-          </a>
+            {/* Subject */}
+            <div>
+              <label className="text-sm font-medium">Subject</label>
+              <input
+                type="text"
+                placeholder="Enter the subject"
+                className="w-full mt-1 p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-pink-300"
+              />
+            </div>
+
+            {/* Message */}
+            <div>
+              <label className="text-sm font-medium">Message</label>
+              <textarea
+                placeholder="Enter your message"
+                rows={4}
+                className="w-full mt-1 p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-pink-300"
+              />
+            </div>
+
+            {/* Button */}
+            <button
+              type="submit"
+              className="bg-pink-300 text-gray-800 py-3 rounded-lg font-semibold hover:bg-pink-400 transition duration-200"
+            >
+              Send Message
+            </button>
+          </form>
         </div>
       </section>
     </main>
