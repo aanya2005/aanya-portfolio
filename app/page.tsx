@@ -103,14 +103,24 @@ export default function Home() {
           <p className="text-gray-600 text-center mb-6">
             Have a question or want to work together? Fill out the form and I’ll get back to you soon!
           </p>
+          <form
+            action="https://formspree.io/f/xwvwewbz"
+            method="POST"
+            className="flex flex-col gap-4"
+          >
+            {/* Anti-spam (honeypot) */}
+            <input type="text" name="_gotcha" className="hidden" />
 
-          <form className="flex flex-col gap-4">
-            
+            {/* Redirect after submit */}
+            <input type="hidden" name="_next" value="http://localhost:3000" />
+
             {/* Name */}
             <div>
               <label className="text-sm font-medium">Name</label>
               <input
                 type="text"
+                name="name"
+                required
                 placeholder="Enter your name"
                 className="w-full mt-1 p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-pink-300"
               />
@@ -121,6 +131,8 @@ export default function Home() {
               <label className="text-sm font-medium">Email</label>
               <input
                 type="email"
+                name="email"
+                required
                 placeholder="Enter your email"
                 className="w-full mt-1 p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-pink-300"
               />
@@ -131,6 +143,7 @@ export default function Home() {
               <label className="text-sm font-medium">Subject</label>
               <input
                 type="text"
+                name="subject"
                 placeholder="Enter the subject"
                 className="w-full mt-1 p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-pink-300"
               />
@@ -140,8 +153,10 @@ export default function Home() {
             <div>
               <label className="text-sm font-medium">Message</label>
               <textarea
-                placeholder="Enter your message"
+                name="message"
+                required
                 rows={4}
+                placeholder="Enter your message"
                 className="w-full mt-1 p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-pink-300"
               />
             </div>
