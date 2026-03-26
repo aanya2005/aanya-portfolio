@@ -10,7 +10,7 @@ export default function SeasonalAnimation() {
   const [season, setSeason] = useState("spring");
 
   useEffect(() => {
-    const month = 9;
+    const month = new Date().getMonth();
 
     if ([2,3,4].includes(month)) setSeason("spring");
     else if ([5,6,7].includes(month)) setSeason("summer");
