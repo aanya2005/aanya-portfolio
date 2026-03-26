@@ -1,23 +1,18 @@
 import Navbar from "../components/Navbar";
-import FloatingPetals from "../components/FloatingPetals";
+import SeasonalAnimation from "../components/SeasonalAnimation";
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-pink-100 text-gray-800 relative overflow-hidden">
+    <main className="relative min-h-screen overflow-hidden">
+
       <Navbar />
-      <img
-        src="/branch.png"
-        alt="cherry blossom branch"
-        className="absolute top-16 md:top-24 right-0 w-[350px] md:w-[450px] opacity-80 pointer-events-none -z-0"
-      />
-      <FloatingPetals />
+
+      <SeasonalAnimation />
 
       {/* Hero Section */}
       <section className="flex flex-col justify-center h-[80vh] px-10 md:px-20 relative z-10">
-        <h1 className="text-5xl font-bold mb-4 text-left">
-          Hi, I'm Aanya 🌸
-        </h1>
-        <p className="text-lg text-gray-600 max-w-xl text-left">
+        <h1 className="text-5xl font-bold mb-4">Hi, I'm Aanya 🌸</h1>
+        <p className="text-lg max-w-xl">
           CS student at UCI passionate about AI, cybersecurity, and building impactful tech.
         </p>
       </section>

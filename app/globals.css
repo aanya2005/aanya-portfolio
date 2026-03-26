@@ -50,3 +50,30 @@ body {
     opacity: 0;
   }
 }
+
+@keyframes leafFall {
+  0% {
+    transform: translateY(-10vh) rotate(0deg);
+    opacity: 0;
+  }
+
+  10% {
+    opacity: 1;
+  }
+
+  70% {
+    transform: translateY(80vh) translateX(40px) rotate(250deg);
+  }
+
+  100% {
+    transform: translateY(100vh) translateX(-30px) rotate(360deg);
+    opacity: 1;
+  }
+}
+
+@keyframes snowFall {
+  0% { transform: translateY(-10vh); opacity: 0; }
+  10% { opacity: 0.8; }
+  50% { transform: translateY(50vh); }
+  100% { transform: translateY(110vh); opacity: 0; }
+}
