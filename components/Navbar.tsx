@@ -1,16 +1,27 @@
-export default function Navbar() {
-  return (
-    <nav className="flex justify-between items-center p-6 bg-pink-200 shadow">
-      <h1 className="text-xl font-bold">Aanya 🌸</h1>
+'use client';
 
-      <div className="flex gap-6">
-        <a href="#projects" className="hover:underline">
-          Projects
-        </a>
-        <a href="#contact" className="hover:underline">
-          Contact
-        </a>
-      </div>
-    </nav>
+import { useState } from 'react';
+
+export default function Navbar() {
+  const [dark, setDark] = useState(false);
+
+  return (
+    <div className={dark ? 'dark' : ''}>
+      <nav style={{ display: 'flex', justifyContent: 'space-between', padding: '20px 40px' }}>
+        <div>
+          <a className="nav-link" href="#about">About</a>
+          <a className="nav-link" href="#projects">Projects</a>
+          <a className="nav-link" href="#experience">Experience</a>
+          <a className="nav-link" href="#skills">Skills</a>
+        </div>
+
+        <button
+          onClick={() => setDark(!dark)}
+          style={{ fontSize: '20px', background: 'none', border: 'none' }}
+        >
+          ☀️
+        </button>
+      </nav>
+    </div>
   );
 }
