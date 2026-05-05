@@ -5,18 +5,28 @@ export default function SkillsGlobe() {
   ];
 
   return (
-    <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: '10px', maxWidth: '600px' }}>
-      {allSkills.map((skill) => (
+    <div style={{ 
+      display: 'flex', 
+      flexWrap: 'wrap', 
+      justifyContent: 'center', 
+      gap: '15px', 
+      maxWidth: '800px',
+      padding: '40px' 
+    }}>
+      {allSkills.map((skill, i) => (
         <div 
           key={skill}
-          className="handwritten"
+          className="handwritten skill-tag"
           style={{
-            padding: '10px 18px',
+            padding: '12px 24px',
             background: 'white',
-            border: '1px solid var(--accent)',
-            borderRadius: '50px',
-            boxShadow: '2px 2px 0px var(--accent)',
-            fontSize: '1.1rem'
+            border: '1.5px solid var(--pink)',
+            borderRadius: '30% 70% 70% 30% / 30% 30% 70% 70%', // Organic "blob" shape
+            boxShadow: '4px 4px 0px var(--accent)',
+            fontSize: '1.2rem',
+            transform: `rotate(${i % 2 === 0 ? 2 : -2}deg)`,
+            transition: 'all 0.3s ease',
+            cursor: 'pointer'
           }}
         >
           {skill}
