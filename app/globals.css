@@ -1,36 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Caveat:wght@400..700&display=swap');
+
 :root {
   --pink: #B36B6E;
   --bg: #fff6f7;
-  --dark-bg: #1a0f12;
+  --text: #333;
+  --accent: #f2c9cc;
 }
 
-html, body {
-  padding: 0;
-  margin: 0;
-  font-family: system-ui, sans-serif;
-  scroll-behavior: smooth;
+/* Theme Classes */
+body.warm {
+  --bg: #fdf2e9; 
+  --text: #5d4037;
+  --accent: #e6b3a3;
+}
+
+body.dark {
+  --bg: #1a0f12;
+  --text: #eee;
+  --accent: #4a2c30;
 }
 
 body {
-  background: var(--bg);
-  color: #111;
+  background-color: var(--bg);
+  color: var(--text);
+  transition: background-color 0.4s ease, color 0.4s ease;
+  margin: 0;
+  font-family: system-ui, sans-serif;
 }
 
-.dark {
-  background: var(--dark-bg);
-  color: white;
+.handwritten {
+  font-family: 'Patrick Hand', cursive;
 }
 
-.nav-link {
-  color: var(--pink);
-  margin-right: 20px;
-  text-decoration: none;
-  font-weight: 500;
+.nav-container {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(8px);
+}
+
+.scrapbook-card {
+  background: white;
+  color: #333; /* Keeps text readable even in dark mode */
+  border: 1px solid #eec;
+  box-shadow: 8px 8px 0px var(--accent);
+  padding: 2.5rem;
+  max-width: 600px;
+  transform: rotate(-1deg);
+}
+
+.sticker {
+  position: absolute;
+  pointer-events: none;
+  z-index: -1;
 }
 
 .section {
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding: 20px;
 }

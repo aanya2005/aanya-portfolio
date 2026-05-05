@@ -1,32 +1,27 @@
-'use client';
-
-import { Canvas, useFrame } from '@react-three/fiber';
-import { Sphere } from '@react-three/drei';
-import { useRef } from 'react';
-import * as THREE from 'three';
-
-function RotatingSphere() {
-  const ref = useRef<THREE.Mesh>(null!);
-
-  useFrame(() => {
-    ref.current.rotation.y += 0.003;
-    ref.current.rotation.x += 0.0015;
-  });
-
-  return (
-    <mesh ref={ref}>
-      <sphereGeometry args={[1.5, 32, 32]} />
-      <meshStandardMaterial color="#B36B6E" wireframe />
-    </mesh>
-  );
-}
-
 export default function SkillsGlobe() {
+  const allSkills = [
+    "Python", "Java", "C++", "JavaScript", "TypeScript", "SQL", "Rust",
+    "React", "Node.js", "Angular", "Flask", "Docker", "Kubernetes", "AWS", "Azure"
+  ];
+
   return (
-    <Canvas style={{ width: 300, height: 300 }}>
-      <ambientLight intensity={1} />
-      <directionalLight position={[2, 2, 2]} />
-      <RotatingSphere />
-    </Canvas>
+    <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: '10px', maxWidth: '600px' }}>
+      {allSkills.map((skill) => (
+        <div 
+          key={skill}
+          className="handwritten"
+          style={{
+            padding: '10px 18px',
+            background: 'white',
+            border: '1px solid var(--accent)',
+            borderRadius: '50px',
+            boxShadow: '2px 2px 0px var(--accent)',
+            fontSize: '1.1rem'
+          }}
+        >
+          {skill}
+        </div>
+      ))}
+    </div>
   );
 }
