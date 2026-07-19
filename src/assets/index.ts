@@ -3,11 +3,9 @@ import aboutMeJournalPng from './journal.PNG';
 import aboutMeJournalWebp800 from './journal.PNG';
 import aboutMeJournalWebp400 from './journal.PNG';
 // Add your profile images here
-import profile1 from './profile1.jpg';
-// import profile2 from './profile2.jpg';
-// import profile3 from './profile3.jpg';
-const profile2 = '';
-const profile3 = '';
+import profile1 from './profile1.PNG';
+import profile2 from './profile2.PNG';
+import profile3 from './profile3.PNG';
 import comingSoon from './coming_soon.png';
 import dividerPng from './divider.PNG';
 import dividerWebp from './divider-original.webp';
