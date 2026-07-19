@@ -21,12 +21,13 @@ const About = () => {
   const roles = [
     'Software Engineer',
     'Full-Stack Developer',
-    'Systems Engineer',
-    'Frontend Developer',
+    'Business Analyst',
+    'Machine Learning Enthusiast',
+    'Open Source Contributor',
   ];
 
   const profileImages = [
-    { src: profile1, caption: "photo 1" },
+    { src: profile1, caption: "that's me!" },
     { src: profile2, caption: "photo 2" },
     { src: profile3, caption: "photo 3" }
   ];

@@ -8,7 +8,7 @@ import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '../ui/
 import { ExternalLink, Code, Heart, ChevronLeft, ChevronRight } from 'lucide-react';
 import { socialLinks } from '../../config/socialLinks';
 import { lightStars, darkStars, specialStars } from '../../assets/stars';
-import { comingSoon } from '../../assets';
+import { comingSoon, DataMintIcon, MovieRecommenderIcon, SearchEngineIcon, Text2SQLIcon } from '../../assets';
 
 const Projects = () => {
   const { isDarkMode } = useDarkMode();
@@ -241,7 +241,7 @@ const Projects = () => {
         "Blockchain",
         "REST APIs"
       ],
-      icon: comingSoon,
+      icon: DataMintIcon,
       detailsUrl: "/projects/datamint-ai-marketplace",
       githubUrl: socialLinks.repositories.projectOne
     },
@@ -257,7 +257,7 @@ const Projects = () => {
         "Machine Learning",
         "LLMs"
       ],
-      icon: comingSoon,
+      icon: Text2SQLIcon,
       detailsUrl: "/projects/text2sql",
       githubUrl: socialLinks.repositories.projectTwo
     },
@@ -272,7 +272,7 @@ const Projects = () => {
         "Search Ranking",
         "Git"
       ],
-      icon: comingSoon,
+      icon: SearchEngineIcon,
       detailsUrl: "/projects/search-engine",
       githubUrl: socialLinks.repositories.projectThree
     },
@@ -287,7 +287,7 @@ const Projects = () => {
         "Scikit-learn",
         "Collaborative Filtering"
       ],
-      icon: comingSoon,
+      icon: MovieRecommenderIcon,
       detailsUrl: "/projects/movie-recommender",
       githubUrl: socialLinks.repositories.projectFour
     }

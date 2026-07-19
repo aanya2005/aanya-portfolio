@@ -12,6 +12,11 @@ import './App.css'
 // Example: const MyProject = lazy(() => import('./pages/projects/MyProject'))
 const Contact = lazy(() => import('./pages/Contact'))
 
+const DataMint = lazy(() => import('./pages/projects/DataMint'))
+const Text2SQL = lazy(() => import('./pages/projects/Text2SQL'))
+const SearchEngine = lazy(() => import('./pages/projects/SearchEngine'))
+const MovieRecommender = lazy(() => import('./pages/projects/MovieRecommender'))
+
 // Lazy load below-the-fold components for better initial load
 const Projects = lazy(() => import('./components/section/Projects'))
 const Experience = lazy(() => import('./components/section/Experience'))
@@ -96,8 +101,26 @@ function AppContent() {
             <Routes>
               <Route path="/" element={<HomePage />} />
               <Route path="/contact" element={<Contact />} />
-              {/* Add your project routes here */}
-              {/* Example: <Route path="/projects/my-project" element={<MyProject />} /> */}
+
+              <Route
+                path="/projects/datamint-ai-marketplace"
+                element={<DataMint />}
+              />
+
+              <Route
+                path="/projects/text2sql"
+                element={<Text2SQL />}
+              />
+
+              <Route
+                path="/projects/search-engine"
+                element={<SearchEngine />}
+              />
+
+              <Route
+                path="/projects/movie-recommender"
+                element={<MovieRecommender />}
+              />
             </Routes>
           </Suspense>
         </main>
