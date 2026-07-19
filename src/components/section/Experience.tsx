@@ -8,34 +8,43 @@ const Experience = () => {
   const themeColors = useThemeColors();
   const experiences = [
     {
-      title: "Your Job Title",
-      company: "Company Name",
-      location: "City, State",
-      period: "Month Year - Month Year",
+      title: "Prompt Engineering Intern",
+      company: "Tata Consultancy Services (TCS)",
+      location: "Remote",
+      period: "Jun 2026 – Present",
       description: [
-        "Description of your role and accomplishments",
+        "Designing agentic AI workflows that automate exception handling across enterprise Order-to-Cash (O2C) operations for Fortune 500 manufacturing clients.",
+        "Engineered LLM-powered prompts and interactive stakeholder demos showcasing autonomous decision-making, human-in-the-loop approvals, and enterprise AI automation."
       ]
     },
     {
-      title: "Your Job Title",
-      company: "Company Name",
-      location: "City, State",
-      period: "Month Year - Month Year",
+      title: "Artificial Intelligence Research Assistant",
+      company: "University of California, Irvine",
+      location: "Irvine, CA",
+      period: "Jan 2025 – Present",
       description: [
-        "Description of your role and accomplishments",
-        "Another accomplishment or responsibility",
-        "One more key achievement",
+        "Co-authored an IEEE-published paper exploring the impact of generative AI on computer science education under Prof. Hadar Ziv.",
+        "Developed deep learning models on NASA PACE datasets, increasing plankton classification accuracy by 32% through feature engineering and data preprocessing."
       ]
     },
     {
-      title: "Your Job Title",
-      company: "Company Name",
-      location: "City, State",
-      period: "Month Year - Month Year",
+      title: "Security Operations Intern",
+      company: "Simpl",
+      location: "Bangalore, India",
+      period: "Jul 2025 – Sept 2025",
       description: [
-        "Description of your role and accomplishments",
-        "Another accomplishment or responsibility",
-        "One more key achievement",
+        "Performed security analysis across Simpl's payment infrastructure serving 26,000+ merchants, uncovering 4 exploitable vulnerabilities in production systems.",
+        "Validated CVEs using Docker-based environments, strengthening platform security for over 1 million monthly active users."
+      ]
+    },
+    {
+      title: "Software Developer Intern",
+      company: "Mendix",
+      location: "Irvine, CA",
+      period: "Jun 2024 – Sept 2024",
+      description: [
+        "Delivered 5+ production-ready application features by translating business requirements into scalable software using Agile development practices.",
+        "Partnered with product and UX teams to build data-driven features that increased user engagement by 8.2%."
       ]
     }
   ];
