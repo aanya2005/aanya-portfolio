@@ -27,9 +27,10 @@ const About = () => {
   ];
 
   const profileImages = [
-    { src: profile1, caption: "that's me!" },
-    { src: profile2, caption: "photo 2" },
-    { src: profile3, caption: "photo 3" }
+    { src: profile1, caption: "hiking with friends!" },
+    { src: profile2, caption: "my research group!" },
+    { src: profile3, caption: "presenting my work!" }
+    // { src: profile4, caption: "description for profile 4" }
   ];
 
   const fullAsciiArt = `⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⠀⠀⠀⠀⠀⠀⠀⠀⠀

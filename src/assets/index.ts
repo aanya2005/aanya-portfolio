@@ -6,6 +6,7 @@ import aboutMeJournalWebp400 from './journal.PNG';
 import profile1 from './profile1.PNG';
 import profile2 from './profile2.PNG';
 import profile3 from './profile3.PNG';
+// import profile4 from './profile4.PNG';
 import comingSoon from './coming_soon.png';
 import dividerPng from './divider.PNG';
 import dividerWebp from './divider-original.webp';
@@ -29,6 +30,7 @@ export const mainAssets = {
   profile1,
   profile2,
   profile3,
+  // profile4,
   comingSoon,
   divider,
   dividerPng,
